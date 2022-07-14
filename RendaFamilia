@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class RendaFamilia{
+				
+		public static void main(String[] args){
+		Scanner scan=new Scanner(System.in);
+
+		int renda;
+		int pessoas;
+		int ponto1;
+		int ponto2;
+		int somaPonto = ponto1 + ponto2;
+
+				
+		System.out.println("Qual a renda total de sua familia?");
+		renda=scan.nextInt();
+
+		if (renda <= 900 ){
+			ponto1 = 5;		
+		}
+		else if (renda >= 900 ){
+			ponto1 = 3;
+		}
+		else if (renda >= 1500){
+			ponto1 = 2;
+		};
+
+		System.out.println("Possui dependentes menores de 18 anos possui? (se nao tiver digite 0)");
+		pessoas=scan.nextInt();
+
+		if (pessoas >= 3 ){
+			ponto2 = 3;		
+		}
+		else if (pessoas > 0 ){
+			ponto2 = 2;
+		}
+		else if (pessoas < 0){
+			ponto2 = 0;
+		};		
+
+		System.out.printf("%s voce teve ", somaPonto, "pontos, voce foi %s", somaPonto>=6?"aprovado":"reprovado");
+	}
+}
