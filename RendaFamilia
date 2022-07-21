@@ -25,7 +25,7 @@ public class RendaFamilia{
 			ponto1 = 2;
 		};
 
-		System.out.println("Possui dependentes menores de 18 anos possui? (se nao tiver digite 0)");
+		System.out.println("Possui dependentes menores de 18 anos? (se nao tiver digite 0)");
 		pessoas=scan.nextInt();
 
 		if (pessoas >= 3 ){
